@@ -1,0 +1,17 @@
+
+:root{
+    --green: #27ae60;
+    --black: #444;
+    --light-color:#777;
+    --bg-color:#e6;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
