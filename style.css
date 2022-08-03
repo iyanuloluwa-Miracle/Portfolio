@@ -175,6 +175,7 @@ section{
     box-shadow: var(--box-shadow);
     text-align: center;
     color: var(--black);
+    background: var(--bg-color);
 
 }
 #theme-toggler:hover{
@@ -335,6 +336,75 @@ section{
     border-radius: 5rem;
 }
 
+.about .row .progress .bar-1-1 span{
+    width: 80%;
+}
+
+
+.about .row .progress .bar-1-2 span{
+    width: 90%;
+}
+
+.about .row .progress .bar-1-3 span{
+    width: 89%;
+}
+
+
+
+
+.about .row .progress .bar-2-1 span{
+    width: 80%;
+}
+
+
+.about .row .progress .bar-2-2 span{
+    width: 80%;
+}
+
+
+.about .row .progress .bar-2-3 span{
+    width: 80%;
+}
+
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+
+}
+
+.services .box-container .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.services .box-container .box i{
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    color: #fff;
+
+}
+
+
+.services .box-container .box h3{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: var(--black);
+}
+
+
+
+
+.services .box-container .box p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--light-color);
 
 
 
@@ -356,15 +426,7 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
+}
 /*media query*/
 
 @media( max-width: 991px){
