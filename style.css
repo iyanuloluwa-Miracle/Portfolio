@@ -110,7 +110,7 @@ section{
 
 .header .user h3{
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 .header .user p{
     color: var(--green);
@@ -393,7 +393,7 @@ section{
 
 
 .services .box-container .box h3{
-    font-size: 4rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     color: var(--black);
 }
@@ -405,28 +405,90 @@ section{
     font-size: 1.4rem;
     line-height: 1.8;
     color: var(--light-color);
+}
+
+
+
+.services .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    z-index: -1;
+    clip-path: circle(9rem at 0% 5%);
+    transition: .3s linear;
+}
+
+
+.services .box-container .box:hover::before{
+    clip-path: circle(100%);
+
+}
+.services .box-container .box:hover > *{
+    color: #fff;
+}
 
 
 
 
 
 
+.contact form{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
 
+}
 
+.contact form .box{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
 
+}
+.contact form textarea{
+    height: 20rem;
+    resize: none;
 
+}
 
-
-
-
-
-
-
-
-
+.contact form .box:focus{
+    box-shadow: var(--box-shadow-inset);
 
 
 }
+
+.credits{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    color: var(--black);
+}
+
+.credits span{
+    color: var(--green);
+
+}
+
+
+
+
+
+
+
 /*media query*/
 
 @media( max-width: 991px){
